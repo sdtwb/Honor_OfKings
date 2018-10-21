@@ -7,7 +7,7 @@ public class PartPerson {
      public char personName;
      public int positionX;
      public int positionY;
-     public int attack;
+     public int attack= 20;
     
 //--------------------------------------------------------------------------------------------函数区
      //---------------------------------------------------------------------构造函数
@@ -29,6 +29,6 @@ public class PartPerson {
      }
      
      void passiveAbility() {
-    	 Hp+= 10;
+    	 
      }
 }
