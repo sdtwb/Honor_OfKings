@@ -1,21 +1,29 @@
 package honorOfKings;
 
-import java.util.*;
+import java.util.Scanner;
 import java.io.*;
-import java.awt.Robot;
+//import javax.imageio.*;
+import java.awt.*;
 import java.awt.AWTException;
 import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import javax.swing.JPanel;
+import javax.swing.*;
+import javax.swing.JComponent;
+import javax.imageio.ImageIO;
+//import java.awt.Graphics2D;
 /**
  * 
  * @author Tanwenbiao
  *
  */
-public class Main {
+public class Main extends JFrame{
 
 	
 	
 //---------------------------------------------------------------函数区
+
 
 	//--------------------------------清空屏幕
 	   void clear() {
@@ -52,23 +60,25 @@ public class Main {
        Battle battle= new Battle();
        battle.battleMain();
        
-       
+       System.out.println("请输入连续的命令集：\n");
+
        while(true){
     	  
     	   //------------------------延迟输入
     	   try {
-    		   Thread.sleep(500);
-    		   //System.out.println("love");
+    		   Thread.sleep(200);
+    		   
     		   } 
-    	   catch (InterruptedException e) { 
+    	   catch (Exception e) { 
     		   
     	   }
     		   
        
-    	   String operate= scanner.next();
-    	   int herro= scanner.nextInt();
-    	   int attack= scanner.nextInt();
-    	    main.clear();
+    	   String operate= scanner.next();//输入命令名字
+    	   int herro= scanner.nextInt();//输入英雄的编号
+    	   int attack= scanner.nextInt();//输入英雄的攻击力
+    	   
+    	   //main.clear();
     	   battle.recieveImput(operate, herro);
     	   battle.displayMaps();
     	   
