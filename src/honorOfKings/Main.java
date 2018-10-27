@@ -2,7 +2,6 @@ package honorOfKings;
 
 import java.util.Scanner;
 import java.io.*;
-//import javax.imageio.*;
 import java.awt.*;
 import java.awt.AWTException;
 import java.awt.event.InputEvent;
@@ -12,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.*;
 import javax.swing.JComponent;
 import javax.imageio.ImageIO;
-//import java.awt.Graphics2D;
+
 /**
  * 
  * @author Tanwenbiao
@@ -24,9 +23,12 @@ public class Main extends JFrame{
 	
 //---------------------------------------------------------------º¯ÊýÇø
 
-
+   
+	/**
+	 * Çå¿ÕÆÁÄ»
+	 */
 	//--------------------------------Çå¿ÕÆÁÄ»
-	   void clear() {
+	  public void clear() {
 
 		   try {
 				

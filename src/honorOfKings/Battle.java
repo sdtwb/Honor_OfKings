@@ -1,5 +1,9 @@
 package honorOfKings;
-
+/**
+ * 
+ * @author 谭文彪
+ *用于王者荣耀中的主要战场控制
+ */
 public class Battle {
 
 		//-------------------------定义英雄--Mp, Hp, Exp, X, Y, Name
@@ -9,19 +13,31 @@ public class Battle {
 	    Maps map= new Maps();
 	
 //-----------------------------------------------------------------------函数区
-	 
+	 /**
+	  * 展现地图
+	  */
     //-----------------------展现地图
 	public void displayMaps() {
 		
 		map.displayMaps();
 
 	}
-
+    /**
+     * 初始话英雄的位置
+     * @param x 英雄的X坐标
+     * @param y 英雄的Y坐标
+     * @param name 英雄的名字
+     */
 	//----------------------初始英雄位置
     public void initHerroPosition(int x, int y, char name) {
     	map.initPosition(x, y, name);
     }
 	
+    /**
+     * 接受用户的输入
+     * @param operate 操作指令
+     * @param herro1 操作的英雄
+     */
     //------------------接受用户输入
     public void recieveImput(String operate, int herro1){
     	

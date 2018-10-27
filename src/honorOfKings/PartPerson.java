@@ -1,5 +1,9 @@
 package honorOfKings;
-
+/**
+ * 
+ * @author 谭文彪
+ *王者荣耀中各种英雄的父类
+ */
 public class PartPerson {
      public int Mp;
      public int Hp;
@@ -23,12 +27,19 @@ public class PartPerson {
      
 
      //--------------------------------------------------------------------角色的主动进攻
-     int activeAbility() {
+     /**
+      * 角色的主动进攻
+      * @return 英雄的攻击力
+      */
+     public int activeAbility() {
     	 
     	 return attack;
      }
      
-     void passiveAbility() {
+     /**
+      * 英雄的被动技能
+      */
+     public void passiveAbility() {
     	 
      }
 }
